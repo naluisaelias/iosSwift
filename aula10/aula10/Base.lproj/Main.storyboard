@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gbc-vl-89M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Am3-In-uVo">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-998" y="-60"/>
         </scene>
-        <!--View Controller-->
+        <!--Tela Inicial-->
         <scene sceneID="q2z-hO-XSf">
             <objects>
-                <viewController id="Am3-In-uVo" sceneMemberID="viewController">
+                <viewController title="Tela Inicial" id="Am3-In-uVo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TMk-f1-0wo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Tela 01"/>
                                 <connections>
-                                    <segue destination="ydz-eE-ieA" kind="show" id="qZw-PP-2V8"/>
+                                    <segue destination="ydz-eE-ieA" kind="show" id="467-nt-4qC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNu-yS-p4e">
@@ -47,16 +47,16 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Tela 02"/>
                                 <connections>
-                                    <segue destination="mfv-SH-qRY" kind="show" id="5OX-bW-Tmg"/>
+                                    <segue destination="mfv-SH-qRY" kind="show" id="rSE-rT-X5C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FF-th-iHq">
-                                <rect key="frame" x="156" y="483" width="80" height="35"/>
+                                <rect key="frame" x="156" y="483" width="80" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Tela 03"/>
                                 <connections>
-                                    <segue destination="oLU-AF-e1s" kind="showDetail" id="1ge-JZ-gOM"/>
+                                    <segue destination="oLU-AF-e1s" kind="showDetail" id="KoN-9M-ygm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,50 +67,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lpp-wU-OHt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="-61"/>
+            <point key="canvasLocation" x="-132.06106870229007" y="-61.267605633802823"/>
         </scene>
-        <!--View Controller-->
+        <!--TelaX View Controller-->
         <scene sceneID="N2L-Yz-jaC">
             <objects>
-                <viewController id="ydz-eE-ieA" sceneMemberID="viewController">
+                <viewController id="ydz-eE-ieA" customClass="TelaXViewController" customModule="aula10" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tq3-D6-Nxe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1G-1c-qRd">
-                                <rect key="frame" x="161" y="409" width="71" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tx-J3-PsP">
+                                <rect key="frame" x="144" y="430" width="104" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Tela X"/>
-                                <connections>
-                                    <segue destination="Jh9-bc-d14" kind="show" id="e31-qN-YnT"/>
-                                </connections>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela Verde"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRU-aQ-YAj">
+                                <rect key="frame" x="131" y="387" width="131" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela Vermelha"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B7t-kK-v5J"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZRU-aQ-YAj" firstAttribute="width" secondItem="6Tx-J3-PsP" secondAttribute="width" id="FPk-hq-RPN"/>
+                            <constraint firstItem="ZRU-aQ-YAj" firstAttribute="height" secondItem="6Tx-J3-PsP" secondAttribute="height" id="pjG-Lj-n7l"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="SH6-AF-mHW"/>
+                    <navigationItem key="navigationItem" id="SH6-AF-mHW">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="gXN-bM-NtI"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Ghq-WY-LdX" kind="show" identifier="TelaXparaTelaVermelha" id="nUF-Yd-zVn"/>
+                        <segue destination="TqP-T8-Vwp" kind="show" identifier="TelaXparaTelaVerde" id="eI0-Rj-71i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAg-KS-7bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="682" y="-746"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="Jdo-gH-rg1">
+        <scene sceneID="8E5-dz-3Wu">
             <objects>
-                <viewController id="Jh9-bc-d14" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="M75-mt-Et6">
+                <viewController id="Ghq-WY-LdX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sdM-K4-4IZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="r9w-Nu-Rxs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="HZD-ND-JGQ"/>
+                        <color key="backgroundColor" red="1" green="0.75346693747429039" blue="0.75757582184971883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Vz1-yJ-QTQ"/>
+                    <navigationItem key="navigationItem" id="gPz-p6-bEw"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9bL-MV-tPE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHb-Xj-zUH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457" y="-746"/>
+            <point key="canvasLocation" x="1523" y="-1012"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OCm-Qo-VP4">
+            <objects>
+                <viewController id="TqP-T8-Vwp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IqE-Jn-W8V">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NrI-G9-tNu"/>
+                        <color key="backgroundColor" red="0.75078970574023973" green="1" blue="0.81351610633623395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SXg-L1-pek"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ao-uW-Muz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1523" y="-337"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="20D-lE-6DJ">
@@ -122,7 +149,9 @@
                         <viewLayoutGuide key="safeArea" id="qjD-vU-LAy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9D6-zt-AQw"/>
+                    <navigationItem key="navigationItem" id="9D6-zt-AQw">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="AD8-v0-PN6"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UmV-2j-Uup" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

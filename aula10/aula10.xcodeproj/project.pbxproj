@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		65C1F6F12DE8E4DF001F7B9E /* TelaXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1F6F02DE8E4DF001F7B9E /* TelaXViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		65C1F6D82DE8C7C9001F7B9E /* aula10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aula10.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C1F6F02DE8E4DF001F7B9E /* TelaXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaXViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +50,7 @@
 		65C1F6CF2DE8C7C9001F7B9E = {
 			isa = PBXGroup;
 			children = (
+				65C1F6F02DE8E4DF001F7B9E /* TelaXViewController.swift */,
 				65C1F6DA2DE8C7C9001F7B9E /* aula10 */,
 				65C1F6D92DE8C7C9001F7B9E /* Products */,
 			);
@@ -132,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C1F6F12DE8E4DF001F7B9E /* TelaXViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
